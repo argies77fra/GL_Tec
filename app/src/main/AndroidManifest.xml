@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.siriaco77.qpm">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".Present.Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Present.Login"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".Present.RecuperarContrasena"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name=".Present.TareaProduccion.TareaProduccion"
+            android:theme="@style/AppTheme"
+            android:label="Tarea de Producción">
+        </activity>
+
+        <activity
+            android:name=".Present.SeleccioneColmena"
+            android:theme="@style/AppTheme"
+            android:label="@string/seleccione_colmena">
+        </activity>
+
+        <activity
+            android:name=".Present.ActivityColmena.ActivityColmena"
+            android:theme="@style/AppTheme"
+            android:label="Buscar Colmena">
+       </activity>
+
+        <activity
+            android:name=".Present.DetalleColmena.DetalleColmena"
+            android:theme="@style/AppTheme"
+            android:label="Colmena">
+        </activity>
+
+        <activity
+            android:name=".Present.CambiarContraseña"
+            android:theme="@style/AppTheme"
+            android:label="Cambiar Contraseña">
+        </activity>
+
+        <activity
+            android:name=".Present.ReemplazoReina"
+            android:theme="@style/AppTheme"
+            android:label="Reemplazo Reina">
+        </activity>
+        <activity
+            android:name=".Present.EstadoSanitario.EstadoSanitario"
+            android:theme="@style/AppTheme"
+            android:label="Estado Sanitario">
+        </activity>
+
+        <activity
+            android:name=".Present.Nivelproduccion.NivelProduccion"
+            android:theme="@style/AppTheme"
+            android:label="Nivel de producción de Miel">
+        </activity>
+
+        <activity
+            android:name=".Present.TareaSanitaria.TareasSanitarias"
+            android:theme="@style/AppTheme"
+            android:label="Tareas de Sanidad">
+        </activity>
+
+        <activity
+            android:name=".Present.TareaSanitaria.DetalleTareaSanitaria"
+            android:theme="@style/AppTheme"
+            android:label="Tarea Sanitaria">
+        </activity>
+
+        <activity
+            android:name=".Present.GlobalLogic.GlobalLogic"
+            android:theme="@style/AppTheme"
+            android:label="Global Logic">
+        </activity>
+
+        <activity
+            android:name=".Present.GlobalLogic.DetalleItemGL"
+            android:theme="@style/AppTheme"
+            android:label="Detalle Item GL">
+        </activity>
+
+
+
+    </application>
+
+</manifest>

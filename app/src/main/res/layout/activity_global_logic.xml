@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.siriaco77.qpm.MainActivity">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/image_logo2"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_fileName="lego_loader.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:visibility="gone"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_gl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15sp"
+        android:layout_below="@+id/edt_buscar_ic">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</android.support.constraint.ConstraintLayout>

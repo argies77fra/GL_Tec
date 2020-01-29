@@ -1,0 +1,81 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="5dp"
+    android:layout_marginBottom="2dp"
+    android:background="@color/colorMiel" >
+
+    <RelativeLayout
+        android:id="@+id/relative_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMiel">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_camera"
+            />
+
+
+        <TextView
+            android:id="@+id/txtColmena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFecha"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginBottom="1sp"
+            android:gravity="left"
+            android:onClick="onClickItemGL"
+            android:text="@string/title"
+            android:textColor="@color/colorBlanco"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Colmena"
+            android:textStyle="italic"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginBottom="1sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txtColmena"
+            android:layout_toRightOf="@+id/txtColmena"
+            android:layout_below="@+id/txtFecha"
+            android:textColor="@color/colorBlanco"
+            android:gravity="left"
+            android:text=""
+            android:onClick="onClickItemGL"
+            />
+
+
+        <TextView
+            android:id="@+id/Tarea"
+            android:textStyle="italic"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginBottom="1sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txtTarea"
+            android:layout_toRightOf="@+id/txtTarea"
+            android:layout_below="@+id/txtColmena"
+            android:textColor="@color/colorBlanco"
+            android:gravity="left"
+            android:text="@string/fecha"
+            android:onClick="onClickItemGL"
+            />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

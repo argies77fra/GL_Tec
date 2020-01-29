@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/tools"
+        android:layout_marginBottom="24dp">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="24dp"
+            android:textColorHint="@color/colorMiel"
+            android:id="@+id/edt_colmena"  >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/edt_colmena2"
+                android:ems="10"
+                android:text=""
+                android:enabled="false"
+                android:hint="@string/colmena"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/edt_colmena"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="24dp"
+            android:textColorHint="@color/colorMiel"
+            android:id="@+id/edt_colmenar"  >
+            <EditText
+                android:id="@+id/edt_colmenar_2"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+
+                android:hint="Colmenar"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/edt_colmenar"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="24dp"
+            android:textColorHint="@color/colorMiel"
+            android:id="@+id/edt_campo"  >
+            <EditText
+                android:id="@+id/edt_campo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:enabled="false"
+                android:ems="10"
+                android:hint="Campo"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/edt_campo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="24dp"
+            android:textColorHint="@color/colorMiel"
+            android:id="@+id/edt_nuevo_origen"  >
+            <EditText
+                android:id="@+id/edt_nuevo_origen2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:focusableInTouchMode="true"
+                android:ems="10"
+                android:hint="Nuevo Origen de Reina"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/edt_nuevo_origen"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="24dp"
+            android:textColorHint="@color/colorMiel"
+            android:id="@+id/edt_observaciones"  >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/edt_observaciones2"
+                android:ems="10"
+                android:hint="Observaciones"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

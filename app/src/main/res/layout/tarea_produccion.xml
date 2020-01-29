@@ -1,0 +1,196 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_marginBottom="24dp">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        android:textSize="22sp"
+        android:layout_margin="5sp"/>
+
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:layout_marginTop="4dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="24dp"
+            android:textColorHint="@color/colorMiel"
+            android:id="@+id/edt_fecha"  >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:id="@+id/edt_fecha_2"
+                android:ems="10"
+                android:text=""
+                android:enabled="false"
+                android:hint="@string/fecha"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/edt_fecha"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="24dp"
+            android:textColorHint="@color/colorMiel"
+            android:id="@+id/edt_colmena"  >
+            <EditText
+                android:id="@+id/edt_colmena_2"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:hint="Colmena"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+       <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/edt_colmena"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        android:textColorHint="@color/colorMiel"
+        android:id="@+id/edt_colmena_destino"  >
+        <EditText
+            android:id="@+id/edt_colmena_destino_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:focusable="false"
+            android:ems="10"
+            android:hint="Colmena Destino"
+            android:drawableRight="@drawable/ic_settings_black_24dp"/>
+      </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/edt_colmena_destino"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        android:textColorHint="@color/colorMiel"
+        android:id="@+id/edt_observaciones"  >
+        <EditText
+            android:id="@+id/edt_observaciones_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:focusableInTouchMode="true"
+            android:ems="10"
+            android:hint="Observaciones"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/edt_observaciones"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        android:textColorHint="@color/colorMiel"
+        android:id="@+id/edt_cant_celdas"  >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:enabled="false"
+            android:id="@+id/edt_cant_celdas_2"
+            android:ems="10"
+            android:hint="Cantidad de Celdas"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/edt_cant_celdas"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        android:textColorHint="@color/colorMiel"
+        android:id="@+id/edt_cant_real"  >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_cant_real_2"
+            android:inputType="number"
+            android:ems="10"
+            android:hint="Cantidad Real"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/edt_cant_real"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        android:textColorHint="@color/colorMiel"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/edt_motivo_des"  >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_motivo_des_2"
+            android:inputType="text"
+            android:ems="10"
+            android:hint="Motivo Descarte"/>
+    </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>
+</ScrollView>

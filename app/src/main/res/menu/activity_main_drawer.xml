@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/celdas_reales">
+        <menu>
+            <item
+                android:id="@+id/nav_transf_larvas"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/tarea_de_producci_n" />
+
+        </menu>
+    </item>
+
+    <item android:title="@string/miel">
+        <menu>
+            <item
+                android:id="@+id/nav_colmena"
+                android:icon="@drawable/ic_colmena_black_24dp"
+                android:title="Colmenas" />
+
+            <item
+                android:id="@+id/nav_colmenas_huerfanas"
+                android:icon="@drawable/ic_compare_black_24dp"
+                android:title="Colmenas Huérfanas" />
+
+        </menu>
+    </item>
+
+    <item android:title="@string/sanitario">
+        <menu>
+            <item
+                android:id="@+id/nav_tareas_sanitarias"
+                android:icon="@drawable/ic_add_box_black_24dp"
+                android:title="Tareas Sanitarias" />
+
+        </menu>
+    </item>
+
+
+
+
+
+</menu>
