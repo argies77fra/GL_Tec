@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.siriaco77.qpm.Present.Login;
 import com.example.siriaco77.qpm.R;
 
@@ -54,16 +56,22 @@ public class DetalleItemGL extends AppCompatActivity {
             title.setText(datos);
             description.setText(datos2);
 
-            URL url = null;
+            RequestOptions options = new RequestOptions()
+                    .centerCrop()
+                    .placeholder(R.mipmap.ic_launcher_round)
+                    .error(R.mipmap.ic_launcher_round);
+
+            Glide.with(this).load(datos3).apply(options).into(image);
+          /*  URL url = null;
             try {
-                url = new URL(datos);
+                url = new URL(datos3);
                 Bitmap bmp = BitmapFactory.decodeStream(url.openConnection().getInputStream());
                 image.setImageBitmap(bmp);
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
-            }
+            }*/
         }
     }
 
