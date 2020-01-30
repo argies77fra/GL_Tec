@@ -1,6 +1,8 @@
 package com.example.siriaco77.qpm.Present.GlobalLogic;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,11 +16,15 @@ import com.example.siriaco77.qpm.R;
 
 import org.w3c.dom.Text;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+
 public class DetalleItemGL extends AppCompatActivity {
 
     private static final int REQUEST_SIGNUP = 0;
     TextView title, description;
-    ImageView imageView;
+    ImageView image;
 
 
     @Override
@@ -37,6 +43,7 @@ public class DetalleItemGL extends AppCompatActivity {
 
         title = findViewById(R.id.title);
         description = findViewById(R.id.description);
+        image = findViewById(R.id.image);
 
 
         Bundle parametros = this.getIntent().getExtras();
@@ -46,11 +53,18 @@ public class DetalleItemGL extends AppCompatActivity {
             String datos3 = parametros.getString("image");
             title.setText(datos);
             description.setText(datos2);
+
+            URL url = null;
+            try {
+                url = new URL(datos);
+                Bitmap bmp = BitmapFactory.decodeStream(url.openConnection().getInputStream());
+                image.setImageBitmap(bmp);
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-
-
-
-
     }
 
     @Override
