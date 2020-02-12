@@ -1,0 +1,226 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="5dp"
+    android:layout_marginBottom="2dp"
+    android:background="@color/colorMiel" >
+
+    <RelativeLayout
+        android:id="@+id/relative_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMiel">
+
+
+        <TextView
+            android:id="@+id/txtColmena"
+            android:textStyle="bold"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginBottom="1sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlanco"
+            android:layout_below="@+id/txtFecha"
+            android:gravity="left"
+            android:text="@string/colmena"
+            android:onClick="onClickColmena"
+            />
+
+        <TextView
+            android:id="@+id/Colmena"
+            android:textStyle="italic"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginBottom="1sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txtColmena"
+            android:layout_toRightOf="@+id/txtColmena"
+            android:layout_below="@+id/txtFecha"
+            android:textColor="@color/colorBlanco"
+            android:gravity="left"
+            android:text="@string/fecha"
+            android:onClick="onClickColmena"
+            />
+
+
+        <TextView
+            android:id="@+id/txtCampo"
+            android:textStyle="bold"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginBottom="1sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlanco"
+            android:layout_below="@+id/txtColmena"
+            android:gravity="left"
+            android:text="Campo :"
+            android:onClick="onClickColmena"
+            />
+
+        <TextView
+            android:id="@+id/Campo"
+            android:textStyle="italic"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginBottom="1sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txtCampo"
+            android:layout_toRightOf="@+id/txtCampo"
+            android:layout_below="@+id/txtColmena"
+            android:textColor="@color/colorBlanco"
+            android:gravity="left"
+            android:text="@string/fecha"
+            android:onClick="onClickColmena"/>
+
+
+        <TextView
+            android:id="@+id/txtColmenar"
+            android:textStyle="bold"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginBottom="1sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlanco"
+            android:layout_below="@+id/txtCampo"
+            android:gravity="left"
+            android:text="Colmenar :"
+            android:onClick="onClickColmena"
+            />
+
+        <TextView
+            android:id="@+id/Colmenar"
+            android:textStyle="italic"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginBottom="1sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txtColmenar"
+            android:layout_toRightOf="@+id/txtColmenar"
+            android:layout_below="@+id/txtCampo"
+            android:textColor="@color/colorBlanco"
+            android:text="fecha"
+            android:onClick="onClickColmena"/>
+
+        <TextView
+            android:id="@+id/txt_estado"
+            android:textStyle="bold"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginBottom="1sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlanco"
+            android:layout_below="@+id/txtColmenar"
+            android:gravity="left"
+            android:text="Estado :"
+            android:onClick="onClickColmena"
+            />
+
+        <TextView
+            android:id="@+id/estado"
+            android:textStyle="italic"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginBottom="1sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txt_estado"
+            android:layout_toRightOf="@+id/txt_estado"
+            android:layout_below="@+id/txtColmenar"
+            android:textColor="@color/colorBlanco"
+            android:gravity="left"
+            android:text="@string/fecha"
+            android:onClick="onClickColmena"/>
+
+
+
+        <TextView
+            android:id="@+id/txtEstadoSanitario"
+            android:textStyle="bold"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginBottom="1sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlanco"
+            android:layout_below="@+id/txt_estado"
+            android:gravity="left"
+            android:text="Estado Sanitario :"
+            android:onClick="onClickColmena"
+            />
+
+        <TextView
+            android:id="@+id/EstadoSanitario"
+            android:textStyle="italic"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginBottom="1sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txtEstadoSanitario"
+            android:layout_toRightOf="@+id/txtEstadoSanitario"
+            android:layout_below="@+id/txt_estado"
+            android:textColor="@color/colorBlanco"
+            android:gravity="left"
+            android:text="@string/fecha"
+            android:onClick="onClickColmena"/>
+
+
+        <TextView
+            android:id="@+id/txtEstadoProduccion"
+            android:textStyle="bold"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginBottom="1sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlanco"
+            android:layout_below="@+id/txtEstadoSanitario"
+            android:gravity="left"
+            android:text="Estado Producción :"
+            android:onClick="onClickColmena"
+            />
+
+        <TextView
+            android:id="@+id/EstadoProduccion"
+            android:textStyle="italic"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginBottom="1sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txtEstadoProduccion"
+            android:layout_toRightOf="@+id/txtEstadoProduccion"
+            android:layout_below="@+id/txtEstadoSanitario"
+            android:textColor="@color/colorBlanco"
+            android:gravity="left"
+            android:text="fecha"
+            android:onClick="onClickColmena"/>
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
